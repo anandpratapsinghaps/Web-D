@@ -1,0 +1,41 @@
+div{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    display: inline-block
+}
+#static #middle{
+    /* static position no effect */
+    position:static;
+    top: 100px;
+    left: 200px;
+    right: 200px;
+    bottom: 700px;
+}
+#relative #middle{
+    /* In relative position it will take values from it's initial position */
+    position: relative;
+    top: 10px;
+    left: 20px;
+    right: 5px;
+    bottom: 3px;
+}
+#absolute #middle{
+    /* If we give absolute to any block it will go to the next upper layer and 
+    if there is any other block next to it then that block will take the initial place of absolute one
+     the position is changed w.r.t the parent if not then body  */
+    position:absolute;
+    top: 5px;
+    bottom: 30px;
+    left: 40px;
+    right:80px;
+}
+#fixed #middle{
+    /* the position of block is fixed wrt viewport it will be removed from normal flow
+    if we scroll down or up the page the element will be fixed it will not move */
+    position:fixed;
+    top: 30px;
+    bottom: 40px;
+    left: 90px;
+}
+
