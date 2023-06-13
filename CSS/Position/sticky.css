@@ -1,0 +1,11 @@
+div{
+    height: 40px;
+    width: 200vh;
+    border: 2px solid black;
+    margin: 40px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 10px;
+    bottom: 20px;
+}
+/* in sticky it will behave as both fixed and relative */
