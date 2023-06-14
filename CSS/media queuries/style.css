@@ -1,0 +1,20 @@
+section{
+    border: 2px solid black;
+    width: 80vw;
+    padding: 20px;
+    margin: 16px auto;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+p{
+    font: size 5%;
+}
+@media screen and (max-width:400px){
+    h1{
+        color: red;
+        background-color: black;
+    }
+    
+}
