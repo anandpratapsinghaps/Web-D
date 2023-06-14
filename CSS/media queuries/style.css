@@ -11,10 +11,17 @@ h1{
 p{
     font: size 5%;
 }
-@media screen and (max-width:400px){
+/* @media screen and (max-width:400px){
     h1{
         color: red;
         background-color: black;
+    }
+    
+} */
+@media screen and (max-width:300px),(orientation:portrait) {
+    h1{
+        color: aqua;
+        background-color: bisque;
     }
     
 }
