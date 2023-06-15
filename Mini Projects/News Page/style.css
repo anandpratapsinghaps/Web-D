@@ -1,0 +1,36 @@
+section{
+    width: 80vw;
+    /* height: 80vh; */
+    border: 10px solid black;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:aqua;
+    
+}
+section img{
+    height: 40%;
+    width: 40%;
+    float: left;
+    padding: 15px;
+}
+.para{
+    clear: both;
+}
+hr{
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before{ /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
