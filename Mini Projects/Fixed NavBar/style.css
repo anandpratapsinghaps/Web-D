@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-size: 1.6rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    padding-top:10px 5px;
+}
+p{
+    font-size: large;
+}
