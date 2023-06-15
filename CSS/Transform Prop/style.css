@@ -21,7 +21,7 @@ h1{
       transition: 2s;
 }
 h1:hover{
-    /* transform: none; */
+    transform: none;
 
 /* Function values */
 /* transform: matrix(1, 2, 3, 4, 5, 6); */
@@ -30,7 +30,7 @@ h1:hover{
 /* transform: rotate(0.5turn); */
 /* transform: rotate3d(1, 2, 3, 10deg); */
 /* transform: rotateX(10deg); */
-transform: rotateY(10deg);
+/* transform: rotateY(10deg); */
 /* transform: rotateZ(10deg); */
 /* transform: translate(12px, 50%); */
 /* transform: translate3d(12px, 50%, 3em); */
