@@ -99,16 +99,16 @@ section div:nth-of-type(3) img{
     height: 100px;
     width:auto;
     border-radius: 50%;
-  }
-  .scrolll:hover{
+}
+.scrolll:hover{
     animation: scroll-left 5s infinite linear;
-  }
-  @keyframes scroll-left {
+}
+@keyframes scroll-left {
     0%{
-      transform: translateX(0);
+    transform: translateX(0);
     }
     100%{
         transform: translateX(-100%);
     }
     
-  }
+}
