@@ -85,14 +85,14 @@ section div:nth-of-type(3) img{
 }
 .scroll:hover{
     animation: scroll-left 5s infinite linear;
-  }
+}
   
-  @keyframes scroll-left {
+@keyframes scroll-left {
     0% {
-      transform: translateX(0);
+    transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
     }
 }
 section div:nth-of-type(4) img{
