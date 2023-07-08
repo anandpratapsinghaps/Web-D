@@ -86,7 +86,7 @@ section div:nth-of-type(3) img{
 .scroll:hover{
     animation: scroll-left 5s infinite linear;
 }
-  
+
 @keyframes scroll-left {
     0% {
     transform: translateX(0);
