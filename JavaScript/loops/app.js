@@ -26,3 +26,15 @@ const animals=['Dog','Lion','Cat','Aur tum..'];
 for(let animal of animals){
     console.log(animal);
 }
+
+
+// for-in loop
+const song={
+    name:"Nai Lagda",
+    singer:"Vishal Mishra",
+    mood:"sad",
+    feeling:"missing you"
+}
+for(let n in song) {
+    console.log(n + ":"+song[i]);
+}
