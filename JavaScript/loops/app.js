@@ -10,9 +10,19 @@ for(let n=1;n<=10;n++){
     console.log(n);
 }
 console.log("nhi chal rha kya...");
+
+
 //while loop
 let i=1;
 while(i<=10){
     console.log(i);
     i++;
+}
+
+
+// for-of loop
+const animals=['Dog','Lion','Cat','Aur tum..'];
+
+for(let animal of animals){
+    console.log(animal);
 }
