@@ -23,6 +23,7 @@ class car{
     }
 }
 
+
 const c1=new car('BMW',1000000,true);
 
 
