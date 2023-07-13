@@ -14,3 +14,8 @@ function sum(x,y){
 }
 const result=sum(4,4);
 console.log(result);
+
+function Sum(x,y,z=0){
+    return x+y+z;
+}
+console.log(Sum(1,2));
