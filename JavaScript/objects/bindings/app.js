@@ -14,3 +14,16 @@ const obj={
         }
     }
 };
+
+//explicit method
+function fun(name,age){
+    console.log(name);
+    console.log(age);
+    console.log(this);
+}
+const a={
+    m:"hello",
+    n:10
+}
+fun('Hannah',20)
+fun.call(a,'Hannah',20);
