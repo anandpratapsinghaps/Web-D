@@ -17,7 +17,7 @@ class car{
         return this.name;
     }
 
-    //set
+    //setter
     set setprice(updatedprice){
         this.price=updatedprice;
     }
