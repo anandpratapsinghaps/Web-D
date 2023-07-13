@@ -5,7 +5,7 @@ const person={
     name:"Hannah",
     age:20,
     isAdult:true
-}
+};
 
 //prototype or prototypal inheritance
 const p1=Object.create(person);
