@@ -20,3 +20,10 @@ const Arr=[1,2,3,4,5,6,7,8,9];
 const sqnum=Arr.map(square);
 console.log(Arr);
 console.log(sqnum);
+
+
+// reduce method
+const ar=[1,2,3,4,5,6,7,8,9]
+const sum=ar.reduce((prev,curr)=>prev+curr);
+console.log(ar);
+console.log(sum);
