@@ -27,3 +27,8 @@ const ar=[1,2,3,4,5,6,7,8,9]
 const sum=ar.reduce((prev,curr)=>prev+curr);
 console.log(ar);
 console.log(sum);
+
+// sort method
+const arry=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+arry.sort((a,b)=>a-b);  //for aesc a-b and for desc b-a
+console.log(arry);
