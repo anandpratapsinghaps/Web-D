@@ -12,3 +12,11 @@ const arr=[1,2,3,4,5,6,7,8,9];
 const oddnums=arr.filter(isOdd);
 console.log(arr);
 console.log(oddnums);
+
+// map method
+
+const square=num => num*num;
+const Arr=[1,2,3,4,5,6,7,8,9];
+const sqnum=Arr.map(square);
+console.log(Arr);
+console.log(sqnum);
