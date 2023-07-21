@@ -1,5 +1,4 @@
 
-
 //object creation
 const person={
     name:"Hannah",
