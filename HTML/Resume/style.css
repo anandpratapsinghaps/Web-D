@@ -1,0 +1,15 @@
+.container{
+    border: 5px solid black;
+    justify-content: center;
+    padding: 10px;
+}
+.container .name{
+    justify-content: center;
+    align-items: center;
+}
+.container .name h1{
+    margin-left: 580px;
+}
+.container .name p{
+    margin-left: 400px;
+}
