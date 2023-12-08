@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll the Dice</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 1330px;
+      }
+
+      .box {
+        width: 80px;
+        height: 50px;
+        text-align: left;
+        font-size: 1.5em;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .even {
+        background-color: white;
+        color: black;
+      }
+
+      .odd {
+        background-color: black;
+        color: white;
+      }
+
+      .red-box {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 40px;
+      }
+
+      .counter {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1em;
+      }
+
+      .green {
+        background-color: green;
+        width: 50px;
+      }
+
+      .result-paragraph {
+        display: inline;
+        font-size: 1.2em;
+        margin-left: 20px;
+      }
+
+      button {
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2px" cellspacing="0">
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <button onclick="rollDice()" class="green">Roll the Dice</button>
+    <button onclick="resetTable()">Reset</button>
+    <p class="result-paragraph">Dice Rolled! Result:</p>
+
+    <script>
+      let currentPosition = 1;
+
+      function createTable() {
+        const tableBody = document.getElementById("table-body");
+        let counter = 1;
+
+        for (let i = 1; i <= 10; i++) {
+          const row = document.createElement("tr");
+
+          for (let j = 1; j <= 10; j++) {
+            const cell = document.createElement("td");
+            cell.className =
+              (i % 2 === 0 && j % 2 === 0) || (i % 2 !== 0 && j % 2 !== 0)
+                ? "box even"
+                : "box odd";
+
+            const counterText = document.createElement("div");
+            counterText.className = "counter";
+            counterText.textContent = counter;
+
+            if (counter === 1) {
+              const redBlock = document.createElement("div");
+              cell.classList.add("red-box");
+
+              cell.appendChild(counterText);
+              cell.appendChild(redBlock);
+            }
+
+            cell.appendChild(counterText);
+            row.appendChild(cell);
+            counter++;
+          }
+
+          tableBody.appendChild(row);
+        }
+      }
+
+      function rollDice() {
+        const diceResult = Math.floor(Math.random() * 6) + 1;
+        const resultParagraph = document.querySelector(".result-paragraph");
+        resultParagraph.textContent = "Dice Rolled! Result: " + diceResult;
+
+        if (currentPosition + diceResult <= 100) {
+          moveRedBlock(currentPosition + diceResult);
+        }
+      }
+
+      function moveRedBlock(newPosition) {
+        const tableCells = document.querySelectorAll(".box");
+        const currentCell = tableCells[currentPosition - 1];
+        const newCell = tableCells[newPosition - 1];
+
+        currentCell.classList.remove("red-box");
+        newCell.classList.add("red-box");
+        currentPosition = newPosition;
+
+        if (currentPosition === 100) {
+          alert("Congratulations! You've won!");
+        }
+      }
+
+      function resetTable() {
+        moveRedBlock(1);
+        const resultParagraph = document.querySelector(".result-paragraph");
+        resultParagraph.textContent = "";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        createTable();
+      });
+    </script>
+  </body>
+</html>
