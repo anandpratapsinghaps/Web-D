@@ -1,10 +1,22 @@
-const age=parseInt(prompt("Enter your age"))
-if(age<18){
-    alert("nikal ja yaha se")
+// const age=parseInt(prompt("Enter your age"))
+// if(age<18){
+//     alert("nikal ja yaha se")
+// }
+// else if(age>=18 && age<25){
+//     alert("aaja lekin peena mt")
+// }
+// else{
+//     alert("ab kyahi bolu ja pee le bina piye toh manega nhi ")
+// }
+
+
+let color = "red";
+if(color === "red"){
+    console.log(`stop! signal is ${color}`);
 }
-else if(age>=18 && age<25){
-    alert("aaja lekin peena mt")
+if(color === "yellow"){
+    console.log(`slow down! signal is ${color}`);
 }
-else{
-    alert("ab kyahi bolu ja pee le bina piye toh manega nhi ")
+if(color === "green"){
+    console.log(`bhag ja jaldi se! signal is ${color}`);
 }
