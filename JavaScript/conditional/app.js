@@ -10,6 +10,7 @@
 // }
 
 
+
 let color = "red";
 if(color === "red"){
     console.log(`stop! signal is ${color}`);
@@ -19,4 +20,16 @@ if(color === "yellow"){
 }
 if(color === "green"){
     console.log(`bhag ja jaldi se! signal is ${color}`);
+}
+
+//nested if else
+let marks = 89;
+if(marks > 33){
+    if(marks > 80){
+        console.log("top kiya hai bhai n")
+    } else{
+        console.log("chal pass to ho gya");
+    }
+} else{
+    console.log("fail ho gya hai bhai tu");
 }
