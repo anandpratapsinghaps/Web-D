@@ -33,3 +33,19 @@ if(marks > 33){
 } else{
     console.log("fail ho gya hai bhai tu");
 }
+
+//switch
+let signal = "Red";
+switch(signal){
+    case "red":
+        console.log("stop");
+        break;
+    case "yellow":
+        console.log("slow down");
+        break;
+    case "green":
+        console.log("go");
+        break;
+    default :
+    console.log("bhag ja");            
+}
