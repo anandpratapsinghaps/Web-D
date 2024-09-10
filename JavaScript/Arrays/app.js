@@ -1,34 +1,31 @@
+let arr = [7, 9, 0, -2];
+let n = 3;
+console.log(arr.slice(0,3));
+console.log(arr.slice(arr.length - n));
 
-
-// filter method
-const isOdd=(num) =>{
-    if(num%2!==0){
-        return true;
-    }
-    return false;
+let str = "abc";
+if(str.length != 0){
+    console.log("not blank");
+} else{
+    console.log("blank");
 }
-const arr=[1,2,3,4,5,6,7,8,9];
 
-const oddnums=arr.filter(isOdd);
-console.log(arr);
-console.log(oddnums);
+let s = "Hello World"
+let idx = 6;
+if(s[idx] == s[idx].toLowerCase()){
+    console.log("yes");
+} else{
+    console.log("No");
+}
 
-// map method
+// let st = prompt("Enter the String");
+// console.log(`Original String ${st}`);
+// console.log(`String without spaces ${st.trim()}`);
 
-const square=num => num*num;
-const Arr=[1,2,3,4,5,6,7,8,9];
-const sqnum=Arr.map(square);
-console.log(Arr);
-console.log(sqnum);
-
-
-// reduce method
-const ar=[1,2,3,4,5,6,7,8,9]
-const sum=ar.reduce((prev,curr)=>prev+curr);
-console.log(ar);
-console.log(sum);
-
-// sort method
-const array=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-array.sort((a,b)=>a-b);  //for aesc a-b and for desc b-a
-console.log(array);
+let array = [1,2,3,45,-2,4,'avf','a'];
+let i = 2;
+if(array.indexOf(i) != -1){
+    console.log("yes");
+} else{
+    console.log("No");
+}
