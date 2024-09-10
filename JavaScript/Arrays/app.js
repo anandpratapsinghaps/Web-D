@@ -18,9 +18,9 @@ if(s[idx] == s[idx].toLowerCase()){
     console.log("No");
 }
 
-let st = prompt("Enter the String");
-console.log(`Original String ${st}`);
-console.log(`String without spaces ${st.trim()}`);
+// let st = prompt("Enter the String");
+// console.log(`Original String ${st}`);
+// console.log(`String without spaces ${st.trim()}`);
 
 let array = [1,2,3,45,-2,4,'avf','a'];
 let i = 2;
