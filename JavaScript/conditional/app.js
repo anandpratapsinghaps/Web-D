@@ -11,33 +11,33 @@
 //     console.log(`bhag ja jaldi se! signal is ${color}`);
 // }
 
-//nested if else
-let marks = 89;
-if(marks > 33){
-    if(marks > 80){
-        console.log("top kiya hai bhai n")
-    } else{
-        console.log("chal pass to ho gya");
-    }
-} else{
-    console.log("fail ho gya hai bhai tu");
-}
+// nested if else
+// let marks = 89;
+// if(marks > 33){
+//     if(marks > 80){
+//         console.log("top kiya hai bhai n")
+//     } else{
+//         console.log("chal pass to ho gya");
+//     }
+// } else{
+//     console.log("fail ho gya hai bhai tu");
+// }
 
-//switch
-let signal = "Red";
-switch(signal){
-    case "red":
-        console.log("stop");
-        break;
-    case "yellow":
-        console.log("slow down");
-        break;
-    case "green":
-        console.log("go");
-        break;
-    default :
-    console.log("bhag ja");            
-}
+// switch
+// let signal = "Red";
+// switch(signal){
+//     case "red":
+//         console.log("stop");
+//         break;
+//     case "yellow":
+//         console.log("slow down");
+//         break;
+//     case "green":
+//         console.log("go");
+//         break;
+//     default :
+//     console.log("bhag ja");            
+// }
 
 // const age=parseInt(prompt("Enter your age"))
 // if(age<18){
@@ -57,43 +57,43 @@ switch(signal){
 // alert(name);
 
 
-let num = 25;
-if(num%10 == 0){
-    console.log("good");
-} else{
-    console.log("bad");
-}
+// let num = 25;
+// if(num%10 == 0){
+//     console.log("good");
+// } else{
+//     console.log("bad");
+// }
 
-let name = prompt("Enter your name");
-let age = prompt("Enter your age")
-alert(`${name} is ${age} year old`)
+// let name = prompt("Enter your name");
+// let age = prompt("Enter your age")
+// alert(`${name} is ${age} year old`)
 
 
-let s = "vbcede"
-if((s[0] == 'A' || s[0] == 'a') && (s.length>5)){
-    console.log("golden");
-} else{
-    console.log("not");
-}
+// let s = "vbcede"
+// if((s[0] == 'A' || s[0] == 'a') && (s.length>5)){
+//     console.log("golden");
+// } else{
+//     console.log("not");
+// }
 
-let n1 = 1;
-let n2 = 2;
-let n3 = 3;
-if(n1>n2){
-    if(n1>n3){
-        console.log("n1");
-    } else{
-        console.log("n3");
-    }
-} else{
-    if(n2>n1){
-        if(n2>n3){
-            console.log("n2");
-        } else{
-            console.log("n3");
-        }
-    }
-}
+// let n1 = 1;
+// let n2 = 2;
+// let n3 = 3;
+// if(n1>n2){
+//     if(n1>n3){
+//         console.log("n1");
+//     } else{
+//         console.log("n3");
+//     }
+// } else{
+//     if(n2>n1){
+//         if(n2>n3){
+//             console.log("n2");
+//         } else{
+//             console.log("n3");
+//         }
+//     }
+// }
 
 // let n1 = 32;
 // let n2 = 452;
@@ -102,3 +102,27 @@ if(n1>n2){
 // } else{
 //     console.log("not ");
 // }
+
+
+
+//guessing game
+let max = prompt("Enter the max num");
+const random = Math.floor(Math.random() * max) + 1;
+
+let guess = prompt("btao ab");
+
+while(true){
+    if(guess == 'quit'){
+        console.log("nhi ho rha kya");
+        break;
+    }
+
+    if(guess == random){
+        console.log(`omfoo guess kr liya bhai n ${random} yhi tha`);
+        break;
+    } else if(guess < random){
+        guess = prompt("thoda bada soch bhai");
+    } else{
+        guess = prompt("jade mt udd thoda sa chhota soch le");
+    }
+}
