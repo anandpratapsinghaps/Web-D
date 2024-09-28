@@ -27,13 +27,30 @@ function sumOfn(n){
 }
 
 //higher order function
+
+//takes multiple function as arg
 function multiplegreet(fun, count){
     for(let i=1; i<=count; i++){
         fun();
     }
 }
-
 let greet = function(){
     console.log("hello");
 }
 multiplegreet(greet, 10);
+
+
+//return a function
+let OddOrEven = function(request){
+    if(request == 'odd'){
+        return function(n){
+            console.log(!(n % 2 == 0));
+        }
+    } else if(request == 'even'){
+        return function(n){
+            console.log(n % 2 == 0);
+        }
+    } else{
+        console.log("wrong request");
+    }
+}
