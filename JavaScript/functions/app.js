@@ -25,3 +25,15 @@ function sumOfn(n){
     }
     return sum;
 }
+
+//higher order function
+function multiplegreet(fun, count){
+    for(let i=1; i<=count; i++){
+        fun();
+    }
+}
+
+let greet = function(){
+    console.log("hello");
+}
+multiplegreet(greet, 10);
