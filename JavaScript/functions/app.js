@@ -86,4 +86,13 @@ console.log(getUnique(str));
 
 
 
+//arrow function
+
+const sum = (a, b) => {
+    return (a+b);
+};
+
+const cube = n => {
+    return n*n*n;
+};
 
