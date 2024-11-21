@@ -54,3 +54,36 @@ let OddOrEven = function(request){
         console.log("wrong request");
     }
 }
+
+//practice ques
+
+let arr = [2, 3, 4, 5, 7, 8 ,3, 2];
+let num = 7;
+
+function getLargerNum(arr, nmu){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] > num){
+            console.log(arr[i]);
+        }
+    }
+}
+getLargerNum(arr, num);
+
+
+let str = "weihfiwvuvbaiojdiawjac";
+
+function getUnique(str){
+    let ans = "";
+    for(let i=0; i<str.length; i++){
+        let currChar = str[i];
+        if(ans.indexOf(currChar) == -1){
+            ans += currChar;
+        }
+    }
+    return ans;
+}
+console.log(getUnique(str));
+
+
+
+
