@@ -96,3 +96,5 @@ const cube = n => {
     return n*n*n;
 };
 
+const mul = (a,b) => (a*b);
+
