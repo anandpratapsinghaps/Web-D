@@ -29,3 +29,15 @@ if(array.indexOf(i) != -1){
 } else{
     console.log("No");
 }
+
+
+let Arr = [1,2,3,45,3,2,52,5,643,35,645];
+
+let max = Arr.reduce((max, el) => {
+    if(max < el){
+        return el;
+    } else {
+        return max;
+    }
+});
+console.log(max);
