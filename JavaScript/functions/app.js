@@ -117,3 +117,20 @@ setTimeout(() => {
     clearInterval(id);
     console.log("cleared");
 }, 10000);
+
+
+const getAvg = (arr1) => {
+    let total = 0;
+    for(let num of arr){
+        total += num;
+    }
+    return total / arr.length;
+}
+
+let arr1 = [2,4,5,6,7,8,12,14];
+console.log(getAvg(arr));
+
+
+let n = 4;
+const isEven = (n) => n % 2 == 0;
+console.log(isEven(n));
