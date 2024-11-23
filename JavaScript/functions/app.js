@@ -1,3 +1,5 @@
+const { clearCache } = require("ejs");
+
 function rollDice(){   //function definition
     let num = Math.floor(Math.random() * 6) + 1;
     console.log(num);
@@ -97,4 +99,13 @@ const cube = n => {
 };
 
 const mul = (a,b) => (a*b);
+
+
+//set time out
+
+console.log("Hey!");
+setTimeout( () => {
+    console.log("How are u ?");
+}, 4000);
+console.log("Buddy");
 
