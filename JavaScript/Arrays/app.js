@@ -41,3 +41,25 @@ let max = Arr.reduce((max, el) => {
     }
 });
 console.log(max);
+
+
+// Square and sum the array elements using the arrow function and then find the
+//  average of the array
+
+let arr1 = [1, 2, 3, 4];
+const sq = arr1.map((el) => el*el);
+console.log(sq);
+const sum = sq.reduce((res, e) => res + e);
+console.log(sum/arr.length);
+
+// Create a new array using the map function whose each element is equal to the
+//  original element plus 5
+let arr2 = [1, 2, 3, 4];
+const resArr = arr2.map((element) => element + 5);
+console.log(resArr);
+
+// Create a new array whose elements are in uppercase of words present in the
+//  original array.
+let OriginalArr = ["abc", "def"];
+const newArr2 = OriginalArr.map((str) => str.toUpperCase());
+console.log(newArr2);
